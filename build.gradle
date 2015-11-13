@@ -1,0 +1,12 @@
+apply plugin: 'war' 
+apply plugin: 'jetty'
+apply plugin: 'eclipse' 
+apply plugin: 'eclipse-wtp'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+
+}
