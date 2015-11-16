@@ -2,6 +2,7 @@ apply plugin: 'war'
 apply plugin: 'jetty'
 apply plugin: 'eclipse' 
 apply plugin: 'eclipse-wtp'
+apply plugin: 'com.bmuschko.cargo'
 
 repositories {
 	mavenCentral()
@@ -9,4 +10,15 @@ repositories {
 
 dependencies {
 
+}
+
+cargo {
+    containerId = 'tomcat7x'
+    port = 8080
+    
+    remote {
+        hostname = 'localhost'
+        username = 'admin'
+        password = 'admin'
+    }
 }
